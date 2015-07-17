@@ -1,12 +1,14 @@
 node "owncloud.t-mobile.de" {
-
-file { '/root/example_file.txt':
-    ensure => "file",
-    owner  => "root",
-    group  => "root",
-    mode   => "700",
-    content => "Congratulations!
-Puppet has created this file.
-",}
-
+	include "apache"
+	include "mysql"
+	include "cloud"
 }
+
+#exec  { 'path':
+#                path => ['/usr/local/bin', '/bin/', '/usr/sbin', '/usr/bin' ],
+#}
+
+exec { 'apt-get update':
+                path => '/usr/bin',
+}
+
