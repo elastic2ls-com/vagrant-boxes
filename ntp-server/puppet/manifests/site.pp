@@ -5,4 +5,5 @@ node default {
   #
   #include ntp
   class { "ntp": }
+  class { "ssh": }
 }

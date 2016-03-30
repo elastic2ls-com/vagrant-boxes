@@ -1,10 +1,2 @@
-ntp::package_ensure: latest
-ntp::service_enable: true
-ntp::service_ensure: running
-ntp::servers:
-  - 0.de.pool.ntp.org iburst
-  - 1.de.pool.ntp.org iburst
-  - 2.de.pool.ntp.org iburst
-  - 3.de.pool.ntp.org iburst
-ntp::driftfile: /var/lib/ntp/drift
+ntp::service_ensure: stopped
 

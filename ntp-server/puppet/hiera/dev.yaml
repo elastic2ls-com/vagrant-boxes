@@ -1,1 +1,6 @@
-ntp::service_ensure: stopped
+ssh::keys:
+  wiec01@DSMBP517-WIEC01.local:
+    ensure: present
+    user: root
+    type: rsa
+    key: "AAAAB3NzaC1yc2EAAAADAQABAAABAQDeEPTt1QEFY6Puz60YRzCAo5TzsY7vGCqf3yJVu4GwUPyZujg60l1nVxDGhIfXiQ8vaGw9yTjjaHjCaO/ikQ97Ify4Ybq1TcdH89JDRCziuhNy2rgyBQWUaEg9EWCi809jUbKwAG+B1GvAgM9+x48djvoE+hYDBoDAZ6/a0xRP/J1iwu8AOEIo+xPaZ2UhfV9bAF5aIfMiQQYK48ZpI9Tqw8Cd1D5WNcdQiDPmsTSKwZICcBwhfn8QuLbjY31Bh/3Ml4zrd8+7iZtYMUXpwWKR1wrxUnZZGyTubBYdHVElsF2RysMQd5I79lTb6Gb9f4UbquJ4OpXrpA7OtGpSdJTb"
