@@ -1,0 +1,9 @@
+ntp::package_ensure: latest
+ntp::service_enable: true
+ntp::service_ensure: running
+ntp::servers:
+  - 13.de.pool.ntp.org iburst
+  - 14.de.pool.ntp.org iburst
+  - 15.de.pool.ntp.org iburst
+  - 16.de.pool.ntp.org iburst
+ntp::driftfile: /var/lib/ntp/drift

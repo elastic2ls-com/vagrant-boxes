@@ -1,0 +1,8 @@
+node web1 {
+	include 'ssh'
+	include 'apache'
+}
+
+exec { 'apt-get update':
+                path => '/usr/bin',
+}
