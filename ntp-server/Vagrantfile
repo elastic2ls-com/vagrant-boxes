@@ -9,6 +9,8 @@ Vagrant.configure(2) do |config|
 
 	config.vm.box = "ubuntu/trusty64"
 	#config.vm.network "public_network", bridge: "your-bridge", ip: "0.0.0.0"
+	config.vm.network "private_network", ip: "172.28.128.11"
+
 
 	config.vm.provider "virtualbox" do |vb|
   		vb.memory = "2048"

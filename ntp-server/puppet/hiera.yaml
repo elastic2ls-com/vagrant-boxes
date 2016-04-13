@@ -2,7 +2,9 @@
   - yaml
 :hierarchy:
   - "nodes/%{::hostname}"
-  - "%{::environment}"
+  - "osfamily/%{::osfamiliy}"
+  - "environment/%{::environment}"
+  - "functional_groups/%{::functional_groups}"
   - "global"
 :yaml:
   :datadir: "/etc/puppet/hiera"
