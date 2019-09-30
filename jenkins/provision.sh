@@ -5,3 +5,4 @@ apt-get update
 sudo apt install openjdk-8-jre -y
 sudo apt-get install jenkins -y
 systemctl start jenkins.service
+apt-get install docker.io -y
